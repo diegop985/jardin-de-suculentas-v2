@@ -2,12 +2,20 @@ import './titulo.css'
 
 
 
-function Titulo() {
+function Titulo(titleProp) {
+
+    const {tituloProps, subtituloProps} = titleProp
+
     return (
+
         <div className="titulo">
-            <h1>Bienvenido al Jardín de Suculentas</h1>
-            <label>COMPRA!!!</label>
+
+            <h1>{tituloProps}</h1>
+
+            <label>{subtituloProps}</label>
+
         </div>
+
     )
 }
 
