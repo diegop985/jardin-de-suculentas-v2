@@ -4,13 +4,13 @@ import './Navbar.css';
 const nav = () => {
   return (
     <>
-      <div class="header-container">
-        <nav class="navbar">
+      <div className="header-container">
+        <nav className="navbar">
           <img
-            class="logo"
+            className="logo"
             src="https://images.vexels.com/media/users/3/230401/isolated/lists/c9e27bacb1dacc48268c59e3b12bb6f8-feliz-planta-de-interior-suculenta-kawaii.png"
           ></img>
-          <li class="nav-links">
+          <li className="nav-links">
             <ul><a href='#'>Home</a></ul>
             <ul><a href='#'>Tienda</a></ul>
             <ul><a href='#'>Galeria</a></ul>
