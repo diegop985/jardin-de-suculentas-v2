@@ -1,0 +1,38 @@
+* {
+  box-sizing: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+}
+
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-links > ul {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
