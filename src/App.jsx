@@ -1,5 +1,5 @@
 import ItemListContainer from './containers/ItemListContainer'
-import RoutesApp from './containers/RoutesApp'
+import RoutesApp from './routes/RoutesApp'
 
 
 function App () {
@@ -7,7 +7,7 @@ function App () {
     return (
         <div>
             <RoutesApp/>
-            <ItemListContainer propItemList = {"Acá va un item buenísimo"}/>
+            
         </div>
         
     )

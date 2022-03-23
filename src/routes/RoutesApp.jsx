@@ -3,6 +3,7 @@ import { useState } from 'react'
 import NavBar from '../components/NavBar/Navbar'
 import Titulo from '../components/Titulo/Titulo'
 import Input from '../components/Input/Input'
+import ItemListContainer from '../containers/ItemListContainer'
 
 
 
@@ -32,8 +33,10 @@ function RoutesApp() {
 
         <Titulo tituloProps= {titulo} subtituloProps="Compra!!"/>
 
-        <Input placeholder = "Ingrese el Nombre" saludo ={fnSaludo} />
-
+        <ItemListContainer 
+            greetings={"Hola sooy ItemListContainer"}
+            titulo = {Titulo}
+        />
 
         </>
         
