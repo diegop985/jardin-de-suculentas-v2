@@ -1,8 +1,11 @@
 
+import CartWidget from '../Carrito/CartWidget';
 import './Navbar.css';
 
 const nav = () => {
+  console.log()
   return (
+  
     <>
       <div className="header-container">
         <nav className="navbar">
@@ -15,7 +18,7 @@ const nav = () => {
             <ul><a href='#'>Tienda</a></ul>
             <ul><a href='#'>Galeria</a></ul>
             <ul><a href='#'>About us</a></ul>
-            <ul><a href='#'>Carrito</a></ul>
+            <CartWidget/>
           </li>
         </nav>
       </div>

@@ -7,11 +7,12 @@ function Input({placeholder, saludo}) {
 
     return (
         <>
-            <Titulo tituloProps = "Como fue" subtituloProps = "No sirve" />
+            <Titulo tituloProps = "Mira que Landing tan lindo" subtituloProps = "Abajo hay un input!!" />
 
             <input placeholder = { placeholder } />
 
             <button onClick={saludo}>Saludo</button>
+            
         </>
     );
 }
