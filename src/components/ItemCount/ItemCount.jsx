@@ -1,15 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import getFetch from '../../helpers/getFetch';
 import './itemcount.css'
 
+
 function ItemCount() {
+
+   const [productos, setProductos] = useState([]) 
+   
+   useEffect(() =>{
+       getFetch //Función que simula una API
+       .then(resp => setProductos(resp))
+       .catch(err => console.log(err))
+       .finally(() => console.log("Do this at the end"))
+       
+    },[])
+    
+    console.log(productos)
+    
 
     const [qty, setQty] = useState(0)
 
     const [stock, setStock] = useState(6)
 
-    // const stock = [0, 6]
-
-    // const [ minStock, maxStock] = stock
+    
 
     const handleMinus = () => qty <= 0 ? alert("No puedes quitar más objetos") : setQty( qty -1 ) 
 
