@@ -1,22 +1,8 @@
 import { useEffect, useState } from 'react';
-import getFetch from '../../helpers/getFetch';
 import './itemcount.css'
 
 
 function ItemCount() {
-
-   const [productos, setProductos] = useState([]) 
-   
-   useEffect(() =>{
-       getFetch //Función que simula una API
-       .then(resp => setProductos(resp))
-       .catch(err => console.log(err))
-       .finally(() => console.log("Do this at the end"))
-       
-    },[])
-    
-    console.log(productos)
-    
 
     const [qty, setQty] = useState(0)
 
