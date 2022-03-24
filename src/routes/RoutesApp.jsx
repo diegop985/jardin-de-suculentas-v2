@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar/Navbar'
 import Titulo from '../components/Titulo/Titulo'
 import Input from '../components/Input/Input'
 import ItemListContainer from '../containers/ItemListContainer'
+import ItemCount from '../components/ItemCount/ItemCount'
 
 
 
@@ -32,9 +33,7 @@ function RoutesApp() {
         <NavBar />
 
         <Titulo tituloProps= {titulo} subtituloProps="Compra!!"/>
-
         <ItemListContainer 
-            greetings={"Hola sooy ItemListContainer"}
             titulo = {Titulo}
         />
 

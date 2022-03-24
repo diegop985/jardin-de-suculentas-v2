@@ -1,0 +1,52 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  align-items: space-between;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+}
+
+.item-body {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.item-body__img {
+  height: 90%;
+  display: grid;
+  place-content: center;
+}
+.item-body__info {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+.item-footer {
+  height: 10%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.item-footer > button {
+  border: none;
+  background-color: rgb(80, 211, 97);
+  font-size: 16px;
+  color: white;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.img-body {
+  height: 200px;
+}

@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
+import Item from '../components/Item/Item'
 import ItemCount from '../components/ItemCount/ItemCount'
+import ItemList from '../components/ItemList/ItemList'
 import getFetch from '../helpers/getFetch'
 import './itemListContainer.css'
+
+
 
    function ItemListContainer ({greetings, titulo}) {
       
@@ -20,13 +24,11 @@ import './itemListContainer.css'
 
    return(
       <div className='itemContainer'>
-         { greetings } <br/><hr/>
+         { greetings }
 
-         { productos.map( (productos) => <div key = {productos.id}>
-            <li key = { productos.id }> {productos.name} </li> 
-         </div> )}
-
-         <ItemCount/>
+         { productos.map( (productos) => <ItemList key = { productos.id} propsItemList = {productos}>
+                                             <Item key = { productos.id} propsItem = {productos}/>
+                                          </ItemList> )}
       </div>
 )}
 
