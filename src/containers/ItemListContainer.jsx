@@ -15,11 +15,10 @@ import './itemListContainer.css'
          getFetch //Función que simula una API
             .then(resp => setProductos(resp))
             .catch(err => console.log(err))
-            .finally(() => console.log("Do this at the end"))
+            // .finally(() => console.log("Do this at the end"))
          
       },[])
       
-   console.log(productos)
 
 
    return(
